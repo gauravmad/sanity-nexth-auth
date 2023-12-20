@@ -1,0 +1,13 @@
+{
+    "api": {
+      "projectId": "nilrzidn",
+      "cors": [
+        {
+          "origin": "http://localhost:3000",
+          "maxAge": 86400,
+          "credentials": true
+        }
+      ]
+    }
+  }
+  
