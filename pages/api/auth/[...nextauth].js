@@ -5,12 +5,12 @@ import GoogleProvider from 'next-auth/providers/google'
 export const authOptions = {
     providers:[
         GithubProvider({
-            clientId:'c2c6b6ac1d88ff4ff717',
-            clientSecret:'6004e84032e746948f1980d489d6004f095640e8'
+            clientId: process.env.GITHUB_CLIENT_ID,
+            clientSecret: process.env.GITHUB_CLIENT_SECRET
         }),
         GoogleProvider({
-            clientId:'695706373319-o09aiimg8jsv48e544e7cgo8nia7ob30.apps.googleusercontent.com',
-            clientSecret:'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'
+            clientId: process.env.GOOGLE_CLIENT_ID,
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET
         })
     ]
 }
