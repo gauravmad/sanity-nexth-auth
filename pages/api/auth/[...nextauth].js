@@ -6,11 +6,13 @@ export const authOptions = {
     providers:[
         GithubProvider({
             clientId: process.env.GITHUB_CLIENT_ID,
-            clientSecret: process.env.GITHUB_CLIENT_SECRET
+            clientSecret: process.env.GITHUB_CLIENT_SECRET,
+            callbackUrl:'https://sanity-nexth-auth.vercel.app/api/auth/callback/github'
         }),
         GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID,
-            clientSecret: process.env.GOOGLE_CLIENT_SECRET
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+            callbackUrl:'https://sanity-nexth-auth.vercel.app/api/auth/callback/google'
         })
     ]
 }
